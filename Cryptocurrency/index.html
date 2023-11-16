@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--coinlerin degerlerinin cekilmesi icin gerekli baglanti adresi-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!--burdan sonraki head kodlari-->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#" data-i18n="menuMarket" id="marketToBinance">Market</a></li>
+                <li><a href="#" data-i18n="menuFeatures">Features</a></li>
+
+
+                <!--this is for creating toggle-->
+                <li id="whitePapersToggle" class="dropdown">
+
+                    <a href="#" class="dropbtn" data-i18n="menuWhitePapers">White Papers</a>
+                    <div class="dropdown-content" id="whitePapersDropdown">
+                        <button id="btcWhitePaper">Bitcoin</button>
+                        <button id="ethWhitePaper">Ethereum</button>
+                        <button id="dogeWhitePaper">Dogecoin</button>
+                        <button id="xrpWhitePaper">Ripple</button>
+                        <button id="adaWhitePaper">Cardano</button>
+                        <button id="ltcWhitePaper">Litecoin</button>
+                    </div>
+
+                </li>
+
+
+                <li><a href="about-us.html" data-i18n="menuAboutUs">About Us</a></li>
+            </ul>
+            <div class="languageMenu">
+                <a href="#" class="btn" id="enLang">EN</a>
+                <a href="#" class="btn" id="trLang">TR</a>
+            </div>
+        </nav>
+        
+
+        <div class="content">
+            <h1>
+                <span data-i18n="buy">BUY &</span> &nbsp;
+                <span class="sell-crypto" data-i18n="sellCrypto">SELL <span>Crypto</span></span>
+            </h1>
+            <p data-i18n="cryptoExchange">World's biggest Cryptocurrency exchange available<br> on the web as well as a mobile phone</p>
+            <a href="#" class="btn" id="btnExploreMore" data-i18n="exploreMore">EXPLORE MORE</a>
+        </div>
+        
+        
+        <div class="coin-list">
+            <div class="coin"> <!--111-burayaa onclick eklemek yerine sadece id=btcCoin verebilirdik
+                 VE SAYFA YENI SEKMEDE ACILIRDI& JS 111 NOLU YORUM SATIRI-->
+                <img onclick="redirectToBinance('BTC')"src="images/bitcoin.png">
+                <div>
+                    <h3 ><span id="bitcoin"></span></h3>
+                    <p onclick="redirectToBinance('BTC')" data-i18n="bitcoin">Bitcoin</p>
+                </div>
+            </div>
+            <div class="coin" onclick="redirectToBinance('ETH')">
+                <img src="images/ethereum.png">
+                <div>
+                    <h3><span id="ethereum"></span></h3>
+                    <p data-i18n="ethereum">Ethereum</p>
+                </div>
+            </div>
+            <div class="coin" onclick="redirectToBinance('DOGE')">
+                <img src="images/dogecoin.png">
+                <div>
+                    <h3><span id="dogecoin"></span></h3>
+                    <p data-i18n="dogecoin">Dogecoin</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="coin-list">
+            <div class="coin" onclick="redirectToBinance('XRP')">
+                <img src="images/ripple-6334565_640.png">
+                <div>
+                    <h3><span id="ripple"></span></h3>
+                    <p data-i18n="ripple">Ripple</p>
+                </div>
+            </div>
+            <div class="coin" onclick="redirectToBinance('LTC')">
+                <img src="images/litecoin.png">
+                <div>
+                    <h3><span id="litecoin"></span></h3>
+                    <p data-i-18n="litecoin">Litecoin</p>
+                </div>
+            </div>
+            <div class="coin" onclick="redirectToBinance('ADA')">
+                <img src="images/cardano.png">
+                <div>
+                    <h3><span id="cardano"></span></h3>
+                    <p data-i18n="cardano">Cardano</p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

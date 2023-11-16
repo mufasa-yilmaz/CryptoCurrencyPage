@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    color: #fff;
+}
+nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+/*EN butonu diger tarafa gitti*/
+nav ul{
+    flex: 1;
+}
+/*ul icerisinde ki li leri yan yana aralarinda bosluk birakarak yerlestirdik.*/
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#fff ;
+    text-decoration:none;
+}
+nav .btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px ;
+    border-radius: 20px;
+    margin: 0 15px ;
+}
+.content{
+    margin-top: 12%;
+}
+.content h1{
+    font-size: 88px;
+    margin-bottom: 15px;
+}
+.content h1 span{
+    color: #ff960b;
+}
+.content p{
+    line-height: 22px;
+    font-size: 14px;
+}
+.content .btn{
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff960b;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+/* Add any other styling as necessary */
+
+.coin-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+.coin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: calc(30% - 30px);
+    color: #ff960b;
+    border: 1px solid #fff;
+    padding: 0px 30px;
+    border-radius: 8px;
+}
+
+.coin img {
+    width: 40px;
+    margin-bottom: 10px; 
+}
+
+
+.sell-crypto {
+    display: block;
+}
+/*     for toggle      */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: palevioletred;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #ff960b;
+}
+
+.show {
+    display: block;
+}
+
+/*about-us page code*/
+
+.social-buttons{
+    width: 100%;
+    padding: 100px 100px 95px 590px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.social-buttons img{
+    width: 35px;
+    position: flex;
+    top: 12px;
+    left: 25px;
+    padding-right: 3px;
+    
+}
+.social-buttons h2{
+    max-width: fit-content;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+
+
+
+
