@@ -75,6 +75,7 @@ nav .btn{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px; 
+    margin-left: 800px;
 }
 
 .coin {
@@ -86,14 +87,15 @@ nav .btn{
     text-align: center;
     width: calc(30% - 30px);
     color: #ff960b;
-    border: 1px solid #fff;
+    border: 1px solid #ff960b;
     padding: 0px 30px;
     border-radius: 8px;
 }
 
 .coin img {
     width: 40px;
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
+    margin-top: 5px;
 }
 
 
@@ -104,16 +106,21 @@ nav .btn{
 .dropdown {
     position: relative;
     display: inline-block;
+   
 }
 
 .dropdown-content {
     margin-top: 10px;
     display: none;
     position: absolute;
-    background-color: palevioletred;
+    background-color: transparent;
+    color: #fff;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    border: none;
+    border-radius: 12px;
+    
 }
 
 .dropdown-content button {
@@ -122,6 +129,8 @@ nav .btn{
     padding: 8px;
     text-align: left;
     border: none;
+    border-radius: 12px;
+    color:#fff;
     background-color: inherit;
     cursor: pointer;
 }
@@ -138,28 +147,30 @@ nav .btn{
 
 .social-buttons{
     width: 100%;
-    padding: 100px 100px 95px 590px;
+    padding: 41vh 35vw; /* Göreceli birim kullanımı */
     list-style: none;
     cursor: pointer;
     box-sizing: border-box;
     position: relative;
+   
 
 }
 .social-buttons img{
-    width: 35px;
-    position: flex;
-    top: 12px;
-    left: 25px;
-    padding-right: 3px;
+    width: 3vw; /* Göreceli birim kullanımı */
+    margin-right: 1vw;
     
 }
 .social-buttons h2{
-    max-width: fit-content;
-    margin-top: 50px;
+    max-width: 100vw; /* Göreceli birim kullanımı */
+    margin-top: 100vh; /* Göreceli birim kullanımı */
     font-style: italic;
 }
 
+.introduce{
+    font: optional;
+    font-family: 'poppins', sans-serif;
+}
 
-
-
-
+.topic{
+    color: #ff960b;
+}

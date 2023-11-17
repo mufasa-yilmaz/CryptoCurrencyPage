@@ -57,7 +57,7 @@ document.getElementById("ltcWhitePaper").addEventListener("click", function() {
 var settings={
     "async":true,
     "scrossDomain":true,
-    "url":"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin%2Clitecoin%2Cripple%2Ccardano&vs_currencies=usd",
+    "url":"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20ripple%2C%20litecoin%2C%20cardano&vs_currencies=usd%2C%20try&",
     "method":"GET",
     "headers":{}
 }
@@ -130,6 +130,7 @@ var translations = {
         "cryptoExchange": "World's biggest Cryptocurrency exchange available <br> on the web as well as a mobile phone",
         "exploreMore": "EXPLORE MORE",
         "bitcoin": "Bitcoin",
+        "Who Are We?":"Who Are We?"
         
     },
     "tr": {
@@ -142,7 +143,7 @@ var translations = {
         "cryptoExchange": "Dünyanin en büyük kripto para borsasi, <br> web ve mobil telefonlarda mevcut",
         "exploreMore": "DAHA FAZLA KEŞFET",
         "bitcoin": "Bitcoin",
-        
+        "Who Are We?":"Biz Kimiz?"
     }
 };
 
@@ -166,7 +167,7 @@ function updateContent(translations) {
         // Use html() to include HTML content
         if (key === 'sellCrypto') {
             var cryptoSpan = $('<span>').html(translations[key]);
-            cryptoSpan.css('color', /* Your desired color for Crypto */);
+            cryptoSpan.css('color','#ff960b');
             element.html('').append(cryptoSpan);
         } else {
             element.html(translations[key]);
