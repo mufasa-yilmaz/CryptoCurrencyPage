@@ -82,8 +82,8 @@ nav .btn{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px; 
-    margin-left: 800px;
+    margin-top: 20px;
+    margin-left: 50%;
 }
 
 .coin {
