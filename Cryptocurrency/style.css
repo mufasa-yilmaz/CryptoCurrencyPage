@@ -66,8 +66,16 @@ nav .btn{
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 30px;
+    width: 14rem;
+    text-align: center;
+    overflow: hidden;
 }
 
+.content .btn .btn-text{
+    color: #fff;
+    text-decoration: none;
+    margin: 2rem 1rem 2rem 1rem;
+}
 /* Add any other styling as necessary */
 
 .coin-list {
