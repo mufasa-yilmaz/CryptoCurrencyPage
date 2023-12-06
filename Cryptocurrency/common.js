@@ -10,6 +10,7 @@ var translations = {
         "cryptoExchange": "World's biggest Cryptocurrency exchange available <br> on the web as well as a mobile phone",
         "exploreMore": "EXPLORE MORE",
         "bitcoin": "Bitcoin",
+        "Who Are We?":"Who Are We?",
     },
     "tr": {
         "menuMarket": "Market",
@@ -21,6 +22,7 @@ var translations = {
         "cryptoExchange": "Dünyanın en büyük kripto para borsası, <br> web ve mobil telefonlarda mevcut",
         "exploreMore": "DAHA FAZLA KEŞFET",
         "bitcoin": "Bitcoin",
+        "Who Are We?":"Biz Kimiz?"
     }
 };
 

@@ -132,6 +132,7 @@ var translations = {
         "bitcoin": "Bitcoin",
         "Who Are We?":"Who Are We?"
         
+        
     },
     "tr": {
         "menuMarket": "Market",
@@ -141,7 +142,7 @@ var translations = {
         "buy": "AL & ",
         "sellCrypto": "SAT Kripto",
         "cryptoExchange": "Dünyanin en büyük kripto para borsasi, <br> web ve mobil telefonlarda mevcut",
-        "exploreMore": "DAHA FAZLA KEŞFET",
+        "exploreMore": "DAHA FAZLA",
         "bitcoin": "Bitcoin",
         "Who Are We?":"Biz Kimiz?"
     }
